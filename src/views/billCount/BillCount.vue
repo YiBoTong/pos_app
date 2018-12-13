@@ -1,30 +1,27 @@
 <template>
   <div class="bill-count">
     <div class="count-header">
-      <mt-header fixed
-                 title="账单统计">
-        <router-link to="/"
-                     slot="left">
+      <mt-header fixed title="账单统计">
+        <router-link to="/" slot="left">
           <mt-button icon="back"></mt-button>
         </router-link>
       </mt-header>
     </div>
     <div class="count-main">
       <div class="main-header">
-        <span class="header-time"
-              @click="openPicker">{{formatTime.year}}年{{formatTime.month}}月</span>
-        <mt-datetime-picker ref="picker"
-                            type="date"
-                            v-model="selectTime">
-        </mt-datetime-picker>
-        <span class="header-type">支出</span>
+        <span class="header-time" @click="openPicker">{{formatTime.year}}年{{formatTime.month}}月</span>
+        <mt-datetime-picker ref="picker" type="date" v-model="selectTime"></mt-datetime-picker>
+        <span class="header-type">收入</span>
       </div>
       <div class="main-count">
-
+        <div class="count-title">共收入11笔，合计</div>
+        <div class="count-money">¥15893.00</div>
       </div>
       <div class="main-chart">
+        <div class="chart-title">收入对比</div>
       </div>
       <div class="main-rank">
+        <div class="rank-title">收入排行榜</div>
       </div>
     </div>
   </div>
@@ -85,6 +82,11 @@ $bill-count-height: calc(100vh - 55px);
     .header-time {
       font-size: 20px;
     }
+  }
+  .main-count {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 </style>
