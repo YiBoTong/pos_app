@@ -19,16 +19,13 @@ export default {
   data() {
     return {
       menu: [{
-        title: '首页',
-        id: 'AppHome',
-        icon: '@/assets/logo.png',
-      }, {
-        title: '交易账单',
-        id: 'TradeBill',
-        icon: '@/assets/logo.png',
-      }, {
         title: '账单统计',
         id: 'BillCount',
+        icon: '@/assets/logo.png',
+      },
+      {
+        title: '交易账单',
+        id: 'TradeBill',
         icon: '@/assets/logo.png',
       }, {
         title: '我的',
@@ -48,4 +45,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.layout-footer {
+  min-height: 55px;
+}
 </style>

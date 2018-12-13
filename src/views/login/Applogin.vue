@@ -38,7 +38,7 @@ export default {
     headleClick() {
       console.log(this.formData)
       this.$router.push({
-        name: 'AppHome'
+        name: 'TradeBill'
       })
     }
   }

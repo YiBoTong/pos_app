@@ -6,27 +6,21 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
-    // 首页
+    // 交易账单
     {
       path: "",
       component: AppLayout,
+      redirect: "/tradeBill",
       children: [
         {
-          path: "",
-          name: "AppHome",
-          component: () => import("./views/home/AppHome.vue")
-        }
-      ]
-    },
-    // 交易账号
-    {
-      path: "/tradeBill",
-      component: AppLayout,
-      children: [
-        {
-          path: "",
+          path: "/tradeBill",
           name: "TradeBill",
           component: () => import("./views/tradeBill/TradeBill.vue")
+        },
+        {
+          path: "tradeDeatails/:id",
+          name: "TradeDeatails",
+          component: () => import("./views/tradeBill/TradeDetails.vue")
         }
       ]
     },

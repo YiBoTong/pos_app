@@ -8,6 +8,9 @@ import MintUI from "mint-ui";
 import "mint-ui/lib/style.css";
 // 引入全局样式
 import "./style.scss";
+import { InfiniteScroll } from "mint-ui";
+
+Vue.use(InfiniteScroll);
 
 Vue.use(MintUI);
 
