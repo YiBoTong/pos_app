@@ -138,7 +138,7 @@ export default {
     .list-case {
       display: flex;
       justify-content: flex-start;
-      min-height: calc((100vh - 40px - 55px - 60px) / 6);
+      min-height: 85px;
       width: 100%;
     }
     .list-case img {

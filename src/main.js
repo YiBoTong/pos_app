@@ -1,5 +1,5 @@
 import Vue from "vue";
-import App from "./App.vue";
+import App from "./App";
 import router from "./router";
 import store from "./store";
 // 引入全部mint-ui组件
@@ -8,12 +8,11 @@ import MintUI from "mint-ui";
 import "mint-ui/lib/style.css";
 // 引入全局样式
 import "./style.scss";
-import { InfiniteScroll } from "mint-ui";
-
-Vue.use(InfiniteScroll);
-
+// 引入图表
+import VeHistogram from "v-charts/lib/histogram.common";
+Vue.component(VeHistogram.name, VeHistogram);
+// 引入js-cookies
 Vue.use(MintUI);
-
 Vue.config.productionTip = false;
 
 new Vue({

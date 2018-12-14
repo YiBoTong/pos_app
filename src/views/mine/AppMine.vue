@@ -1,8 +1,10 @@
 <template>
   <div class="app-mine">
     <div class="mine-header">
-      <mt-header fixed title="我的">
-        <router-link to="/" slot="left">
+      <mt-header fixed
+                 title="我的">
+        <router-link to="/"
+                     slot="left">
           <mt-button icon="back"></mt-button>
         </router-link>
       </mt-header>
@@ -10,25 +12,26 @@
     <div class="mine-main">
       <div class="main-top">
         <div class="top-avatar">
-          <div
-            :style="{backgroundImage: `url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2577022489,1269768065&fm=27&gp=0.jpg)`}"
-            class="user-avatar"
-          ></div>
+          <div :style="{backgroundImage: `url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2577022489,1269768065&fm=27&gp=0.jpg)`}"
+               class="user-avatar"></div>
         </div>
         <div class="top-name">张国荣</div>
       </div>
       <div class="main-between">
-        <div class="between-case">
-          <span>个人资料</span>
-          <span>></span>
+        <div class="between-case"
+             @click="handleRouter('MerchantInfo')">
+          <span class="case-left">商户信息</span>
+          <span class="case-right">></span>
         </div>
-        <div class="between-case">
-          <span>修改密码</span>
-          <span>></span>
+        <div class="between-case"
+             @click="handleRouter('ChangePassword')">
+          <span class="case-left">修改密码</span>
+          <span class="case-right">></span>
         </div>
       </div>
       <div class="main-bottom">
-        <mt-button type="danger" @click.native="handleOut">退出登录</mt-button>
+        <mt-button type="danger"
+                   @click.native="handleOut">退出登录</mt-button>
       </div>
     </div>
   </div>
@@ -38,6 +41,7 @@
 // @ is an alias to /src
 // 此组件必须在所用页面单独引用
 import { MessageBox } from "mint-ui";
+import Cookies from "js-cookie";
 export default {
   name: "AppMine",
   components: {},
@@ -49,12 +53,19 @@ export default {
   methods: {
     handleOut() {
       MessageBox.confirm('确定退出登录?').then(res => {
+        Cookies.remove("token")
+        console.log(Cookies.get("token"))
         this.$router.push({
           name: "login"
         })
       }).catch(res => {
         console.log(res)
       });
+    },
+    handleRouter(value) {
+      this.$router.push({
+        name: value
+      })
     }
   }
 };
@@ -99,6 +110,9 @@ export default {
       height: 50px;
       min-width: calc(100vw - 20vw);
       border-bottom: 1px solid gainsboro;
+      .case-right {
+        color: rgb(204, 199, 199);
+      }
     }
     .between-case span {
       font-size: 18px;

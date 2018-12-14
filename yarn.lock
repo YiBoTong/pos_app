@@ -2407,6 +2407,28 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
+echarts-amap@1.0.0-rc.6:
+  version "1.0.0-rc.6"
+  resolved "https://registry.yarnpkg.com/echarts-amap/-/echarts-amap-1.0.0-rc.6.tgz#5782a74daee52ed44ce3f8f62577561783f09e16"
+  integrity sha1-V4KnTa7lLtRM4/j2JXdWF4PwnhY=
+
+echarts-liquidfill@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/echarts-liquidfill/-/echarts-liquidfill-2.0.3.tgz#a73ce81f9a2804bfb213cb7c4c2324495859c127"
+  integrity sha512-pnTkLQNsiCU07jBbgXxzseNjGKcntifDeSMMjSwWzsjT6OxFjplecBAwQc5ZOwZYZXoMimmrZb2W5b21uoDmJw==
+
+echarts-wordcloud@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/echarts-wordcloud/-/echarts-wordcloud-1.1.3.tgz#07b140c8ba76b19c317b43c310f3d5dc99289ff2"
+  integrity sha512-Et8D5xEAoYkidmHun+hEH+2lF9dhCt6D0JJ390vlr2r/1zwhhZAbcL01CEvG93QcMcJpSvSPK8vRiGkTbMHRxg==
+
+echarts@^4.2.0-rc.2:
+  version "4.2.0-rc.2"
+  resolved "https://registry.yarnpkg.com/echarts/-/echarts-4.2.0-rc.2.tgz#6a98397aafa81b65cbf0bc15d9afdbfb244df91e"
+  integrity sha512-5Y4Kyi4eNsRM9Cnl7Q8C6PFVjznBJv1VIiMm/VSQ9zyqeo+ce1695GqUd9v4zfVx+Ow1gnwMJX67h0FNvarScw==
+  dependencies:
+    zrender "4.0.5"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -3928,6 +3950,11 @@ js-base64@^2.1.8:
   version "2.4.9"
   resolved "http://registry.npm.taobao.org/js-base64/download/js-base64-2.4.9.tgz#748911fb04f48a60c4771b375cac45a80df11c03"
 
+js-cookie@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.0.tgz#1b2c279a6eece380a12168b92485265b35b1effb"
+  integrity sha1-Gywnmm7s44ChIWi5JIUmWzWx7/s=
+
 js-levenshtein@^1.1.3:
   version "1.1.4"
   resolved "http://registry.npm.taobao.org/js-levenshtein/download/js-levenshtein-1.1.4.tgz#3a56e3cbf589ca0081eb22cd9ba0b1290a16d26e"
@@ -4715,6 +4742,11 @@ num2fraction@^1.2.2:
 number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/number-is-nan/download/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
+
+numerify@1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/numerify/-/numerify-1.2.9.tgz#af4696bb1d57f8d3970a615d8b0cd53d932bd559"
+  integrity sha512-X4QzQiytV5ZN3TVLhzbtFzjTarUNnaa1pgNDFqt7u7Nqhxe7FvY2eYrGt4WYHlYXDqgtfC/n/a5nJ2y0LijV8w==
 
 oauth-sign@~0.9.0:
   version "0.9.0"
@@ -6808,6 +6840,11 @@ utila@^0.4.0, utila@~0.4:
   version "0.4.0"
   resolved "http://registry.npm.taobao.org/utila/download/utila-0.4.0.tgz#8a16a05d445657a3aea5eecc5b12a4fa5379772c"
 
+utils-lite@0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/utils-lite/-/utils-lite-0.1.10.tgz#d2908c0482e23c31e6b082558540e7134ffad7d7"
+  integrity sha512-jlHvdtI8MyWURF/3u+ufIjf1Cs5WjN6WZl9qO8dEkZsVjaI7X5YMUhaCFzkvB69ljt6fo4Dd7V/Oj2NJOFDFOQ==
+
 utils-merge@1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/utils-merge/download/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
@@ -6815,6 +6852,17 @@ utils-merge@1.0.1:
 uuid@^3.0.1, uuid@^3.3.2:
   version "3.3.2"
   resolved "http://registry.npm.taobao.org/uuid/download/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
+
+v-charts@^1.19.0:
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/v-charts/-/v-charts-1.19.0.tgz#07b701800b159bd514264ffc8bf12b0405142da3"
+  integrity sha512-vm2HBUmxAsXK0ivwce9LytcpqrItDA5JSPLYVxZXtiuoyhcn80XX1/3dPJd/1GqG1OYv3jfBo1s9ra4q8GowqA==
+  dependencies:
+    echarts-amap "1.0.0-rc.6"
+    echarts-liquidfill "^2.0.2"
+    echarts-wordcloud "^1.1.3"
+    numerify "1.2.9"
+    utils-lite "0.1.10"
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
@@ -7193,3 +7241,8 @@ yorkie@^2.0.0:
     is-ci "^1.0.10"
     normalize-path "^1.0.0"
     strip-indent "^2.0.0"
+
+zrender@4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/zrender/-/zrender-4.0.5.tgz#6e8f738971ce2cd624aac82b2156729b1c0e5a82"
+  integrity sha512-SintgipGEJPT9Sz2ABRoE4ZD7Yzy7oR7j7KP6H+C9FlbHWnLUfGVK7E8UV27pGwlxAMB0EsnrqhXx5XjAfv/KA==
